@@ -14,7 +14,7 @@ export function getPhotos(year) {
         setTimeout(() => {
             dispatch({
                 type: GET_PHOTOS_SUCCESS,
-                payload: [1,2,3,4,5]
+                payload: [1,2,3,4,5,6]
             })
         }, 1000)
     }

@@ -5,7 +5,7 @@ export default class Page extends Component {
         this.props.getPhotos(+e.target.innerText)
     }
     render() {
-        const { year, photos, fetching } = this.props
+        const { year, photos, fetching } = this.props;
         return <div className='ib page'>
             <p>
                 <button className='btn' onClick={this.onYearBtnClick.bind(this)}>2016</button>{' '}
@@ -18,6 +18,7 @@ export default class Page extends Component {
                     <p>Загрузка...</p>
                     :
                     <p>У тебя {photos.length} фото.</p>
+
             }
         </div>
     }
@@ -27,4 +28,4 @@ Page.propTypes = {
     year: PropTypes.number.isRequired,
     photos: PropTypes.array.isRequired,
     getPhotos: PropTypes.func.isRequired
-}
+};
